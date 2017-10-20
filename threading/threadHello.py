@@ -8,7 +8,7 @@ class Hello(threading.Thread):
         threading.Thread.__init__(self)
 
     def run(self):
-        print "Hello from thread",self.getName()
+        print ("Hello from thread",self.getName())
 
 
 

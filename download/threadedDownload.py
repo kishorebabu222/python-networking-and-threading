@@ -55,7 +55,7 @@ class DownThread(threading.Thread):
         self._content_consumed = False
 
     def run(self):
-        print 'Downloading %s' % self.url
+        print ('Downloading %s' % self.url)
         r = requests.get(self.url, stream=True)
         with open(self.filename, 'wb') as f:
             f.write(r.content)
